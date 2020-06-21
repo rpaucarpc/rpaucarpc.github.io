@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rpaucarc</title>
+    <link rel="icon" ref="img/logo-ico.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="wrapper">
+            <figure class="logo">
+                <img src="img/logo-ico.png" alt="">
+                <span class="header-nombre">Rolando Paucar</span>
+            </figure>
+            <nav class="nav">
+                <div class="menu" id="menu"style="display: none;" >
+                    <a href="#inicio" onclick="mostrarMenu()"> Inicio</a>
+                    <a href="#acerca" onclick="mostrarMenu()">Acerca de</a>
+                    <a href="#experiencia"onclick="mostrarMenu()">Experiencia</a>
+                    <a href="#contacto"onclick="mostrarMenu()">Contacto</a>
+                    <div class="close-icon">
+                        <span onclick="mostrarMenu()"><i class="fas fa-times"></i></span>  
+                        
+                    </div>
+                </div>
+                <figure class="menu-icon" onclick="mostrarMenu()">
+                    <img src="img/icono-men.png" alt="">
+                </figure>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <section class="hero" id="inicio">
+            <div></div>
+            <img src="img/tech1o.png" alt="" class="hero-imagen1">
+            <img src="img/tech2o.png" alt="" class="hero-imagen2">
+            <img src="img/tech3o.png" alt="" class="hero-imagen3">
+
+            <div class="hero-titulo">
+                <div class="hero-foto"></div>
+                <h1 class="hero-nombre">ROLANDO</h1>
+                <h2 class="hero-apellido">Paucar Camargo</h2>
+            </div>
+     
+            <div class="hero-descripcion">
+                <p>Ingeniero en Sistemas y Computaciòn</p>
+                <p>Analista de Desarrollo de Sistemas</p>
+            </div>
+
+            <div class="hero-qr">
+                <figure>
+                    <img src="img/QRo.png" alt="">
+                </figure>
+            </div>
+            
+        </section>
+
+        <section class="acerca" id="acerca">
+            <div class="wrapper">
+                <h2 class="seccion-titulo azul">Acerca de</h2>
+                <p>¡ Hola ! Mi nombre es Rolando Paucar Camargo, 
+                    soy Ingeniero de Sistemas y Computación 
+                    con experiencia en desarrollo de sistemas web y 
+                    de escritorio y actualmente trabajo 
+                    en una entidad Financiera 
+                    como Analista de Desarrollo de Sistemas.
+                </p>
+                <figure>
+                    <img src="img/mous.png" alt="">
+                </figure>
+            </div>
+        </section>
+    
+        <section class="experiencia" id="experiencia">
+            <div class="wrapper">
+                <h2 class="seccion-titulo violeta"> Experiencia</h2>
+                <div class="experiencia-lista">
+                    <p class="item-exp">Analista de Desarrollo de Sistemas</p>
+                    <span class="sub-exp">Caja Huancayo</span>
+        
+                    <p class="item-exp"> Instructor de Computación e Informática</p>
+                    <span class="sub-exp">SENATI</span>
+        
+                    <p class="item-exp"> Analista de Sistemas Informáticos</p>
+                    <span class="sub-exp">XURFACE</span>
+        
+                    <p class="item-exp">Analista Programador</p>
+                    <span class="sub-exp">Universidad Peruana Los Andes</span>
+                </div>
+                <figure>
+                    <img src="img/sungals.png" alt="">
+                </figure>
+            </div>
+        </section>
+    
+        <section class="contacto" id="contacto">
+            <div class="wrapper">
+                <h2 class="seccion-titulo naranja"> Contacto</h2>
+                <div class="contacto-lista">
+                    <p class="item-exp">E-mail</p>
+                    <a class="sub-exp" href="mailto:rpaucarpc@gmail.com" > 
+                        rpaucarpc@gmail.com
+                    </a>
+        
+                    <p class="item-exp">LinkedIn</p>
+                    <a class="sub-exp" href="https://www.linkedin.com/in/rolando-paucar-camargo-b8246b160/" target="_blank"> 
+                        https://www.linkedin.com/in/rolando-paucar-camargo-b8246b160/
+                    </a>
+        
+                    <p class="item-exp"> Facebook</p>
+                    <a class="sub-exp" href="https://www.facebook.com/rpaucarpc" target="_blank"> 
+                        https://www.facebook.com/rpaucarpc
+                    </a>
+        
+                    <p class="item-exp"> GitHub</p>
+                    <a class="sub-exp" href="https://github.com/rpaucarpc" target="_blank"> 
+                        https://github.com/rpaucarpc
+                    </a>
+                </div>
+                <figure>
+                    <img src="img/coff.png" alt="">
+                </figure>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/rolando-paucar-camargo-b8246b160/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/rpaucarpc"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/rpaucarpc" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-descripcion">
+                <p>© 2020 por Rolando Paucar. All rights reserved.</p>
+            </div>
+            <img class="img-huella" src="img/Huell.png" alt="">
+        </footer>
+   
+    </div>
+    <div class="mouse-top" id="mouseTop">
+        <a href="#inicio"><i class="far fa-arrow-alt-circle-up"></i></a>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>

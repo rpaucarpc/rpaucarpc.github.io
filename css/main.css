@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: #011C24D9;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+}
+
+figure {
+    text-align: center;
+}
+
+.seccion-titulo{
+    margin: 0 0 40px 0;
+}
+
+.item-exp{
+    font-weight: bold;
+}
+
+.sub-exp {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.azul {
+    color: #0062FF;
+}
+
+.violeta{
+    color: #DB46D8;
+}
+.naranja{
+    color: #FF866B
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    
+    z-index: 99;
+}
+.header .wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    /*alineado horizontal*/
+    /*justify-items: start;*/
+
+    /*alineado vertical*/
+    align-items: center;
+}
+
+.header .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.header-nombre{
+    display: none;
+    
+}
+
+.header figure {
+    text-align: left;
+}
+
+.header nav{
+    /*alineado horizontal*/
+    justify-self: end;
+    display: relative;
+    /* alienado vertical*/
+    /*align-self: ;*/
+}
+
+.close-icon{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu .close-icon span{
+    color: #011C24D9;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu{
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 8px;
+    padding: 35px 10px;
+    box-sizing: border-box;
+    box-shadow: gray 3px 3px 10px;
+}
+
+.menu a{
+    color: #011C24D9;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+
+.fondo-azul {
+    background-color: #0062FF;
+    transition-duration: 0.5s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 520px  550px  600px 550px 160px;
+}
+
+.hero{
+    background: transparent linear-gradient(146deg, #0062FF 0%, #DB46D8 71%, #FFC353 100%) 0% 0% no-repeat padding-box;
+    display: grid;
+    grid-template-rows: 60px 120px 80px 1fr;
+    grid-template-columns: 1fr ;
+    justify-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero::after{
+    content: "";
+    background-color: white;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transform: rotate(-8deg);
+    transform-origin: 0 0;
+}
+
+.hero-titulo
+{
+    width: 267px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100px 1fr;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-titulo .hero-foto{
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/foto-her.png");
+    background-size: cover;
+    border-radius: 50%;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.hero-nombre,
+.hero-apellido{
+    align-self: end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.hero-nombre{
+    font-size: 24px;
+    text-shadow:  #1f2328 0px 0px 2px;
+}
+
+.hero-apellido{
+    font-size: 18px;
+    align-self: start;
+    text-shadow:  #1f2328 0px 0px 2px;
+}
+
+.hero-descripcion{
+    font-size: 16px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.hero-descripcion p{
+    text-shadow:  #1f2328 0px 0px 2px;
+    text-align: center;
+}
+
+.hero-descripcion p:nth-of-type(2){
+    font-size: 14px;
+}
+
+.hero-qr{
+    z-index: 3;
+}
+
+.hero-qr img{
+    margin-top: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+.hero .hero-imagen1 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+    transform: rotate(45deg);
+    left: -130px
+}
+
+.hero .hero-imagen2 ,
+.hero .hero-imagen3{
+    display: none;
+} 
+
+.acerca,
+.experiencia,
+.contacto{
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.acerca{
+    background-color: white;
+}
+.acerca::after{
+    content: "";
+    background-color: #F6F9FC;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transform: rotate(-8deg);
+    transform-origin: 0 0;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acerca img{
+    margin-top: 50px;
+    width: 160px;
+    transform: rotate(-45deg);
+    margin-bottom: 50px;
+}
+
+.experiencia{
+    background-color: #F6F9FC;
+}
+
+.experiencia::after{
+    content: "";
+    background-color: white;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transform: rotate(-8deg);
+    transform-origin: 0 0;
+}
+
+.experiencia img{
+    width: 220px;
+    transform: rotate(155deg);
+    margin-bottom: 50px;
+}
+
+.contacto{
+    background-color: white;
+}
+
+.contacto a{
+    text-decoration: none;
+    color: #191616;
+}
+
+
+.contacto img{
+    margin-top: 20px;
+    width: 157px;
+    transform: rotate(365deg);
+    margin-bottom: 50px;
+}
+
+.footer{
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #011C24D9;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer .social{
+    font-size: 30px;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.footer-descripcion{
+    background-color: #0062FF;
+}
+
+.footer-descripcion p{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.img-huella{
+    position: absolute;
+    width: 150px;
+    opacity: 0.1;
+    margin-left: -75px;
+    left: 50%;
+    bottom: -80px;
+    z-index: -1;
+}
+
+.mouse-top{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+
+.mouse-top a{
+    font-size: 35px;
+    color: cadetblue;
+    opacity: 0.4;
+}
+.mostrar{
+    display: block;
+
+}
