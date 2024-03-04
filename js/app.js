@@ -10,8 +10,8 @@ function iniciar(e){
 
 function getToken(){
     let transactionId = Date.now();
-    //const url = 'https://testcheckout.izipay.pe/apidemo/v1/Token/Generate';
-    const url = 'https://testapi-pw.izipay.pe/security/v1/Token/Generate';
+    const url = 'https://testcheckout.izipay.pe/apidemo/v1/Token/Generate';
+    //const url = 'https://testapi-pw.izipay.pe/security/v1/Token/Generate';
     //const url = 'https://api-pw.izipay.pe/security/v1/Token/Generate ';
     const datos = {
         requestSource: "RECURRENCE",
