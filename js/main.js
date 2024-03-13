@@ -29,35 +29,3 @@ window.onblur = function(){
     var menu = document.getElementById("menu");
     menu.style.display = 'none';
   }
-
-function btnPrueba(){
-
-    const iziConfig = {
-        merchantCode: '5003158',
-        codMoney: 'PEN',
-        amount: '1.50',
-        action: 'pay',
-        render: { typeForm: 'redirect' container: '#iframe-payment' },
-        urlRedirect: 'izipay.pe',
-        urlIPN: '',
-        billing: {
-        firstName: 'usuario',
-        lastName: 'usuario_apellido_paterno',
-        motherLastName: 'usuario_apellido_materno',
-        address: 'dirección',
-        postalCode: '01',
-        city: 'lima',
-        country: 'peru',
-        state: 'lima',
-        phoneNumber: '987654321',
-        email: 'usuario@email.com',
-        },
-        numberReferenceTrade: '1234567',
-        orderNumber: '123456',
-        publicKey: 'string_encriptado',
-        mode: 'prod',
-        tokenSession: TOKEN_GENERADO,
-        userOrg: '1snn5n9w'
-        userScoring: 'izipay_low'
-        };
-}
